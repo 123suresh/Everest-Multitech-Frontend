@@ -26,49 +26,49 @@ export function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-cover bg-center" style={{backgroundColor:"#F9842C"}} />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32" style={{ backgroundColor: "#ff6000" }}>
+        <div className="absolute top-0 h-full w-full bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full  bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
-        <div className="flex flex-wrap items-center justify-center"> {/* Added justify-center */}
-  <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
-    {/* Centered Image */}
-    <div className="flex justify-center mb-6"> {/* Added flex and justify-center */}
-      <img 
-        src='//img1.wsimg.com/isteam/ip/7fe5675c-56c8-4e1d-baba-1474b5263ce5/blob-8e4d79e.png/:/rs=h:127,cg:true,m/qt=q:95' 
-        alt="Everest Multi Tech" 
-        className="max-w-full h-auto" // Ensures the image is responsive
-        width="230px"
-      />
-    </div>
+          <div className="flex flex-wrap items-center justify-center"> {/* Added justify-center */}
+            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+              {/* Centered Image */}
+              <div className="flex justify-center mb-6"> {/* Added flex and justify-center */}
+                <img
+                  src='//img1.wsimg.com/isteam/ip/7fe5675c-56c8-4e1d-baba-1474b5263ce5/blob-8e4d79e.png/:/rs=h:127,cg:true,m/qt=q:95'
+                  alt="Everest Multi Tech"
+                  className="max-w-full h-auto" // Ensures the image is responsive
+                  width="230px"
+                />
+              </div>
 
-    {/* Text Content */}
-    <Typography
-      variant="h4"
-      color="white"
-      className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
-    >
-      Welcome to
-    </Typography>
-    <Typography
-      variant="h1"
-      color="white"
-      className="mb-6 font-black text-5xl md:text-6xl lg:text-7xl"
-    >
-      EVEREST MULTI TECH
-    </Typography>
-    <Typography
-      variant="h4"
-      color="white"
-      className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
-    >
-      Repair and Printing
-    </Typography>
-    <Typography variant="lead" color="white" className="opacity-80 text-lg md:text-xl">
-      Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
-    </Typography>
-  </div>
-</div>
+              {/* Text Content */}
+              <Typography
+                variant="h4"
+                color="white"
+                className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+              >
+                Welcome to
+              </Typography>
+              <Typography
+                variant="h1"
+                color="white"
+                className="mb-6 font-black text-5xl md:text-6xl lg:text-7xl"
+              >
+                EVEREST MULTI TECH
+              </Typography>
+              <Typography
+                variant="h4"
+                color="white"
+                className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+              >
+                Repair and Printing
+              </Typography>
+              <Typography variant="lead" color="white" className="opacity-80 text-lg md:text-xl">
+                Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -111,10 +111,10 @@ export function Home() {
       <section className="px-2 pt-20 pb-48 bg-gray-50">
         <div className="container mx-auto">
           <PageTitle section="Our Services" heading="Here are our Services">
-            As a certified vendor for cell phone, laptop, computer, gaming device repairs, and flex/printing services, 
-            we pride ourselves on delivering exceptional customer service. Our commitment to quality ensures that every 
-            repair meets the highest standards, guaranteeing customer satisfaction. We are known for our quick, reliable, 
-            and responsible service, backed by a guarantee on every repair we perform. Trust us to restore your devices and 
+            As a certified vendor for cell phone, laptop, computer, gaming device repairs, and flex/printing services,
+            we pride ourselves on delivering exceptional customer service. Our commitment to quality ensures that every
+            repair meets the highest standards, guaranteeing customer satisfaction. We are known for our quick, reliable,
+            and responsible service, backed by a guarantee on every repair we perform. Trust us to restore your devices and
             meet all your printing needs with precision and care.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">

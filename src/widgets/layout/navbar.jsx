@@ -46,7 +46,7 @@ export function Navbar({ brandName, routes, action }) {
             <Link
               to={path}
               target={target}
-              className="flex items-center gap-1 p-1 font-bold"
+              className="flex items-center gap-1 p-1 font-bold text-lg"
             >
               {icon &&
                 React.createElement(icon, {
