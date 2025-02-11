@@ -11,11 +11,11 @@ export function Repairs() {
   return (
     <div className="min-h-screen">
       {/* Repair Header Section */}
-      <div className="text-center py-10 px-4">
-        <Typography variant="h1" className="mb-6 font-black text-blue-900 text-4xl md:text-5xl">
+      <div className="text-center py-10 px-4 mx-4" style={{ backgroundColor: "#ff6000" }}>
+        <Typography variant="h1" className="mb-6 font-black text-white text-4xl md:text-5xl">
           Repairs
         </Typography>
-        <Typography variant="lead" className="opacity-80 text-gray-700 text-lg md:text-xl">
+        <Typography variant="lead" className="text-white text-2xl md:text-xl">
           Everest Multi Tech specializes in the repair of a wide range of electronic devices, ensuring top-notch service and customer satisfaction.
         </Typography>
       </div>
@@ -105,11 +105,6 @@ export function Repairs() {
           </Grid>
         </Grid>
       </Box>
-
-      {/* Footer Section */}
-      <div className="bg-white mt-10">
-        <Footer />
-      </div>
     </div>
   );
 }

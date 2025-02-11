@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { Navbar } from "@/widgets/layout";
+import { Footer, Navbar } from "@/widgets/layout";
 import routes from "@/routes";
 
 function App() {
@@ -19,6 +19,10 @@ function App() {
           )}
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
+      </div>
+            {/* Footer Section */}
+            <div className="bg-white">
+        <Footer />
       </div>
     </>
   );

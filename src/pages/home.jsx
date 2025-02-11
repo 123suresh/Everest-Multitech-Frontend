@@ -208,11 +208,6 @@ export function Home() {
           </form>
         </div>
       </section>
-
-      {/* Footer Section */}
-      <div className="bg-white">
-        <Footer />
-      </div>
     </>
   );
 }
