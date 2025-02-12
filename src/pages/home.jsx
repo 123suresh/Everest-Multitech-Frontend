@@ -20,11 +20,24 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32" style={{ backgroundColor: "#ff6000" }}>
-        <div className="absolute top-0 h-full w-full bg-center" />
-        <div className="absolute top-0 h-full w-full bg-center" />
-        <div className="max-w-8xl container relative mx-auto">
+      {/* Hero Section with Background Video */}
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src="/img/RepairVideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay to darken the video */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+
+        {/* Content */}
+        <div className="max-w-8xl container relative mx-auto z-20">
           <div className="flex flex-wrap items-center justify-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               {/* Centered Image */}
@@ -69,7 +82,7 @@ export function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="-mt-32 bg-white px-2.5 pb-20 pt-4"> {/* Added px-2.5 for 10px padding */}
+      {/* <section className="-mt-32 bg-white px-2.5 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="relative w-full min-h-[300px]">
             <Swiper
@@ -101,10 +114,10 @@ export function Home() {
             </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
-      <section className="px-2.5 pt-20 pb-48 bg-gray-50"> {/* Added px-2.5 for 10px padding */}
+      <section className="px-2.5 pt-20 pb-48 bg-gray-50">
         <div className="container mx-auto">
           <PageTitle section="Our Services" heading="Here are our Services">
             As a certified vendor for cell phone, laptop, computer, gaming device repairs, and flex/printing services,
@@ -136,12 +149,12 @@ export function Home() {
       </section>
 
       {/* Co-Working Section */}
-      <section className="relative bg-white px-2.5"> {/* Added px-2.5 for 10px padding */}
+      <section className="relative bg-white px-2.5">
         <div className="container mx-auto">
           <PageTitle heading="Reviews">
-          At Everest Multi Tech, customer satisfaction is our top priority. We take pride in delivering exceptional service, 
-          ensuring that every repair, printing, and shipping need is met with precision and care. Our commitment to quality, 
-          efficiency, and reliability makes us the go-to choice for customers seeking expert solutions.
+            At Everest Multi Tech, customer satisfaction is our top priority. We take pride in delivering exceptional service,
+            ensuring that every repair, printing, and shipping need is met with precision and care. Our commitment to quality,
+            efficiency, and reliability makes us the go-to choice for customers seeking expert solutions.
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
@@ -162,13 +175,16 @@ export function Home() {
                 <Typography variant="h5" className="font-normal text-blue-gray-500 pt-3 pb-3">
                   {description}
                 </Typography>
-                <Button variant="text" className="p-0 hover:bg-transparent text-base pt-3 pb-3" style={{color:"#ff6000"}}>Read full review <ArrowForwardIosIcon fontSize="small" /></Button>
+                <Button variant="text" className="p-0 hover:bg-transparent text-base pt-3 pb-3" style={{ color: "#ff6000" }}>
+                  Read full review <ArrowForwardIosIcon fontSize="small" />
+                </Button>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Contact Section */}
       <section className="relative bg-gray-50 px-2.5">
         <div className="container mx-auto">
           <PageTitle section="Contact Us" heading="Wants to contact us?">
@@ -180,24 +196,6 @@ export function Home() {
               <Input variant="outlined" size="lg" label="Email Address" className="flex-1" />
             </div>
             <Textarea variant="outlined" size="lg" label="Message" rows={8} />
-            {/* <Checkbox
-              label={
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center font-normal"
-                >
-                  I agree the
-                  <a
-                    href="#"
-                    className="font-medium transition-colors hover:text-gray-900"
-                  >
-                    &nbsp;Terms and Conditions
-                  </a>
-                </Typography>
-              }
-              containerProps={{ className: "-ml-2.5" }}
-            /> */}
             <Button variant="gradient" size="lg" className="mt-8" fullWidth>
               Send Message
             </Button>

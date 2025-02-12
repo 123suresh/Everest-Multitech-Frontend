@@ -96,7 +96,7 @@ export default function VerticalTabs({RepairDataFromProps}) {
             width: isSmallScreen ? '100%' : 'calc(100% - 200px)', // Adjust width for small screens
           }}
         >
-          <RepairDetails category={item.category} desc={item.description} />
+          <RepairDetails name={item.name} desc={item.description} />
         </TabPanel>
       ))}
     </Box>

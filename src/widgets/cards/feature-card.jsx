@@ -6,7 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({ title, description,image }) {
   return (
     <Card className="rounded-lg shadow-lg shadow-gray-500/10">
       <CardBody className="px-8 text-center">
@@ -19,7 +19,7 @@ export function FeatureCard({ color, icon, title, description }) {
           {icon}
         </IconButton> */}
 
-          <img src={"https://tse2.mm.bing.net/th?id=OIP.QGNUJBEED2Yq_vAkVrf88gHaFe&pid=Api&P=0&h=180"}
+          <img src={image}
           width="400px"
           />
 

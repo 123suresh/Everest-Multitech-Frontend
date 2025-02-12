@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'; // Use MUI's Typography
 import React from 'react';
 
 
-function RepairDetails({category, desc}) {
+function RepairDetails({name, desc}) {
 
   return (
     <>
@@ -15,7 +15,7 @@ function RepairDetails({category, desc}) {
           }}
           variant="h4" gutterBottom
         >
-          {category}
+          {name}
         </Typography>
         <Typography sx={{fontSize:"18px"}} variant="subtitle1">{desc}</Typography>
       </Box>
