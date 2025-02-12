@@ -20,6 +20,8 @@ export function Navbar({ brandName, routes, action }) {
     );
   }, []);
 
+  const handleNavClick = () =>{setOpenNav(false)}
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
@@ -29,6 +31,7 @@ export function Navbar({ brandName, routes, action }) {
           variant="small"
           color="inherit"
           className="capitalize"
+          onClick={()=>handleNavClick()}
         >
           {href ? (
             <a
@@ -64,8 +67,11 @@ export function Navbar({ brandName, routes, action }) {
     <MTNavbar color="transparent" className="p-3"> {/* Removed fixed positioning */}
       <div className="container mx-auto flex items-center justify-between" style={{color:"black"}}>
         <Link to="/">
-          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            {brandName}
+          <Typography 
+          // className="mr-4 ml-2 cursor-pointer py-1.5 font-bold"
+          >
+            {/* {brandName} */}
+            <img src="/img/everest_logo1.png" width="80px" height="auto"/>
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>

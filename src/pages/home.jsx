@@ -1,44 +1,40 @@
 import React from "react";
 import {
   Card,
-  CardBody,
-  CardHeader,
   Typography,
   Button,
   IconButton,
   Input,
   Textarea,
-  Checkbox,
 } from "@material-tailwind/react";
-import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
-import { PageTitle, Footer } from "@/widgets/layout";
+import { PageTitle } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
-import ImageCarousel from "./ImgCarousel";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper/modules";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export function Home() {
   return (
     <>
       {/* Hero Section */}
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32" style={{ backgroundColor: "#ff6000" }}>
-        <div className="absolute top-0 h-full w-full bg-cover bg-center" />
-        <div className="absolute top-0 h-full w-full  bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-center" />
+        <div className="absolute top-0 h-full w-full bg-center" />
         <div className="max-w-8xl container relative mx-auto">
-          <div className="flex flex-wrap items-center justify-center"> {/* Added justify-center */}
+          <div className="flex flex-wrap items-center justify-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               {/* Centered Image */}
-              <div className="flex justify-center mb-6"> {/* Added flex and justify-center */}
+              <div className="flex justify-center">
                 <img
-                  src='//img1.wsimg.com/isteam/ip/7fe5675c-56c8-4e1d-baba-1474b5263ce5/blob-8e4d79e.png/:/rs=h:127,cg:true,m/qt=q:95'
+                  src="/img/everest_logo1.png"
                   alt="Everest Multi Tech"
-                  className="max-w-full h-auto" // Ensures the image is responsive
-                  width="230px"
+                  className="max-w-full h-auto"
+                  width="270px"
+                  height="auto"
                 />
               </div>
 
@@ -73,7 +69,7 @@ export function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="-mt-32 bg-white px-4 pb-20 pt-4">
+      <section className="-mt-32 bg-white px-2.5 pb-20 pt-4"> {/* Added px-2.5 for 10px padding */}
         <div className="container mx-auto">
           <div className="relative w-full min-h-[300px]">
             <Swiper
@@ -108,7 +104,7 @@ export function Home() {
       </section>
 
       {/* Team Section */}
-      <section className="px-2 pt-20 pb-48 bg-gray-50">
+      <section className="px-2.5 pt-20 pb-48 bg-gray-50"> {/* Added px-2.5 for 10px padding */}
         <div className="container mx-auto">
           <PageTitle section="Our Services" heading="Here are our Services">
             As a certified vendor for cell phone, laptop, computer, gaming device repairs, and flex/printing services,
@@ -140,12 +136,12 @@ export function Home() {
       </section>
 
       {/* Co-Working Section */}
-      <section className="relative bg-white py-24 px-4">
+      <section className="relative bg-white px-2.5"> {/* Added px-2.5 for 10px padding */}
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+          <PageTitle heading="Reviews">
+          At Everest Multi Tech, customer satisfaction is our top priority. We take pride in delivering exceptional service, 
+          ensuring that every repair, printing, and shipping need is met with precision and care. Our commitment to quality, 
+          efficiency, and reliability makes us the go-to choice for customers seeking expert solutions.
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
@@ -153,30 +149,30 @@ export function Home() {
                 key={title}
                 color="transparent"
                 shadow={false}
-                className="text-center text-blue-gray-900 hover:shadow-lg transition-shadow duration-300"
+                className="text-center text-blue-gray-900 hover:shadow-lg transition-shadow duration-300 p-4"
               >
                 <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
                   {React.createElement(icon, {
                     className: "w-5 h-5 text-white",
                   })}
                 </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h4" color="blue-gray" className="mb-2 pt-3 pb-3">
                   {title}
                 </Typography>
-                <Typography className="font-normal text-blue-gray-500">
+                <Typography variant="h5" className="font-normal text-blue-gray-500 pt-3 pb-3">
                   {description}
                 </Typography>
+                <Button variant="text" className="p-0 hover:bg-transparent text-base pt-3 pb-3" style={{color:"#ff6000"}}>Read full review <ArrowForwardIosIcon fontSize="small" /></Button>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="relative bg-gray-50 py-24 px-4">
+      <section className="relative bg-gray-50 px-2.5">
         <div className="container mx-auto">
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+          <PageTitle section="Contact Us" heading="Wants to contact us?">
+            Complete this form and we will get back to you as soon as possible.
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex flex-col gap-8 md:flex-row">
@@ -184,7 +180,7 @@ export function Home() {
               <Input variant="outlined" size="lg" label="Email Address" className="flex-1" />
             </div>
             <Textarea variant="outlined" size="lg" label="Message" rows={8} />
-            <Checkbox
+            {/* <Checkbox
               label={
                 <Typography
                   variant="small"
@@ -201,7 +197,7 @@ export function Home() {
                 </Typography>
               }
               containerProps={{ className: "-ml-2.5" }}
-            />
+            /> */}
             <Button variant="gradient" size="lg" className="mt-8" fullWidth>
               Send Message
             </Button>

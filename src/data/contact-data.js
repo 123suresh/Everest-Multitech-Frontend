@@ -6,22 +6,19 @@ import {
 
 export const contactData = [
   {
-    title: "Excelent Services",
+    title: "Recommends",
     icon: BriefcaseIcon,
-    description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    description:"Always makes the customer feel appreciated, I was told twice my I...",
   },
   {
-    title: "Grow Your Market",
+    title: "Recommends",
     icon: ChartBarIcon,
-    description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    description:"Everest Multi Tech fixes broken phones & computers with ease, original parts...",
   },
   {
-    title: "Launch Time",
+    title: "Recommends",
     icon: PlayIcon,
-    description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    description:"Everest Multi Tech fixes broken phones & computers with ease, original parts...",
   },
 ];
 
