@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -20,7 +20,9 @@ export function Navbar({ brandName, routes, action }) {
     );
   }, []);
 
-  const handleNavClick = () =>{setOpenNav(false)}
+  const handleNavClick = () => {
+    setOpenNav(false);
+  };
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -31,13 +33,13 @@ export function Navbar({ brandName, routes, action }) {
           variant="small"
           color="inherit"
           className="capitalize"
-          onClick={()=>handleNavClick()}
+          onClick={handleNavClick}
         >
           {href ? (
             <a
               href={href}
               target={target}
-              className="flex items-center gap-1 p-1 font-bold"
+              className="flex items-center gap-1 p-1 font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
               {icon &&
                 React.createElement(icon, {
@@ -46,17 +48,21 @@ export function Navbar({ brandName, routes, action }) {
               {name}
             </a>
           ) : (
-            <Link
-              to={path}
-              target={target}
-              className="flex items-center gap-1 p-1 font-bold text-lg"
-            >
-              {icon &&
-                React.createElement(icon, {
-                  className: "w-[18px] h-[18px] opacity-75 mr-1",
-                })}
-              {name}
-            </Link>
+<NavLink
+  to={path}
+  target={target}
+  className="flex items-center gap-1 p-1 font-medium transition-colors duration-200"
+  style={({ isActive }) => ({
+    fontSize: "18px",
+    color: isActive ? "#ff6000" : "#4a5568", // yellow for active, gray-700 for inactive
+  })}
+>
+  {icon &&
+    React.createElement(icon, {
+      className: "w-[18px] h-[18px] opacity-75 mr-1",
+    })}
+  {name}
+</NavLink>
           )}
         </Typography>
       ))}
@@ -64,14 +70,11 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3"> {/* Removed fixed positioning */}
-      <div className="container mx-auto flex items-center justify-between" style={{color:"black"}}>
+    <MTNavbar color="transparent" className="p-2 w-full max-w-full">
+      <div className="flex items-center justify-between w-full" style={{ color: "black" }}>
         <Link to="/">
-          <Typography 
-          // className="mr-4 ml-2 cursor-pointer py-1.5 font-bold"
-          >
-            {/* {brandName} */}
-            <img src="/img/everest_logo1.png" width="80px" height="auto"/>
+          <Typography>
+            <img src="/img/everest_logo1.png" width="80px" height="auto" alt="Everest Logo" />
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>
@@ -80,14 +83,15 @@ export function Navbar({ brandName, routes, action }) {
             href="https://www.material-tailwind.com/blocks?ref=mtkr"
             target="_blank"
           >
-            <Button variant="text" size="sm" color="white" fullWidth>
+            {/* <Button variant="text" size="sm" color="white" fullWidth>
               Sign Up
-            </Button>
+            </Button> */}
           </a>
           {React.cloneElement(action, {
             className: "hidden lg:inline-block",
           })}
         </div>
+
         <IconButton
           variant="text"
           size="sm"
@@ -103,7 +107,7 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
+        className="rounded-xl bg-white px-4 text-blue-gray-900"
         open={openNav}
       >
         <div className="container mx-auto">
