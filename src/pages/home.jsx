@@ -16,12 +16,14 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper/modules";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import {RepairSlidingImg} from '../everestdata/RepairData';
+import { Box } from "@mui/material";
 
 export function Home() {
   return (
     <>
       {/* Hero Section with Background Video */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+      <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32">
         {/* Background Video */}
         <video
           autoPlay
@@ -41,7 +43,7 @@ export function Home() {
           <div className="flex flex-wrap items-center justify-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               {/* Centered Image */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <img
                   src="/img/everest_logo1.png"
                   alt="Everest Multi Tech"
@@ -49,7 +51,7 @@ export function Home() {
                   width="270px"
                   height="auto"
                 />
-              </div>
+              </div> */}
 
               {/* Text Content */}
               <Typography
@@ -84,7 +86,7 @@ export function Home() {
       {/* Features Section */}
       <section className="-mt-32 bg-white px-2.5 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="relative w-full min-h-[300px]">
+          <div className="relative w-full min-h-[300px] z-30"> {/* Increased z-index */}
             <Swiper
               modules={[Autoplay, Pagination]}
               slidesPerView={1}
@@ -98,25 +100,20 @@ export function Home() {
               }}
               className="w-full h-full"
             >
-              {featuresData.map(({ color, title, icon, description }) => (
-                <SwiperSlide key={title}>
-                  <FeatureCard
-                    key={title}
-                    color={color}
-                    title={title}
-                    icon={React.createElement(icon, {
-                      className: "w-5 h-5 text-white",
-                    })}
-                    description={description}
-                  />
-                </SwiperSlide>
-              ))}
+          {RepairSlidingImg.map(({ title, description, image }) => (
+            <SwiperSlide key={title}>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <FeatureCard title={title} description={description} image={image} />
+              </Box>
+            </SwiperSlide>
+          ))}
             </Swiper>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Rest of the code remains unchanged */}
+
       <section className="px-2.5 pt-20 pb-48 bg-gray-50">
         <div className="container mx-auto">
           <PageTitle section="Our Services" heading="Here are our Services">
@@ -202,6 +199,7 @@ export function Home() {
           </form>
         </div>
       </section>
+      
     </>
   );
 }
