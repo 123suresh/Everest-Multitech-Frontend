@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { PageTitle } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { featuresData, contactData } from "@/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,6 +18,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {RepairSlidingImg} from '../everestdata/RepairData';
 import { Box } from "@mui/material";
+import {servicesData} from "../everestdata/servicesData"
 
 export function Home() {
   return (
@@ -124,21 +125,21 @@ export function Home() {
             meet all your printing needs with precision and care.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {teamData.map(({ img, name, position, socials }) => (
+            {servicesData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-xl fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
+                // socials={
+                //   <div className="flex items-center gap-2">
+                //     {socials.map(({ color, name }) => (
+                //       <IconButton key={name} color={color} variant="text">
+                //         <i className={`fa-brands text-xl fa-${name}`} />
+                //       </IconButton>
+                //     ))}
+                //   </div>
+                // }
               />
             ))}
           </div>
