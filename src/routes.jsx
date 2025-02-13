@@ -4,6 +4,11 @@ import OnlineStore from "./pages/OnlineStore";
 import Contact from "./pages/Contact";
 import ITService from "./pages/ITService";
 import Microsoldering from "./pages/Microsoldering";
+import Carrier from "./pages/Carrier";
+import Printing from "./pages/Printing";
+import InternetSvc from "./pages/InternetSvc";
+import MoneySvc from "./pages/MoneySvc";
+import Shippingsvc from "./pages/Shippingsvc";
 
 export const routes = [
   {
@@ -38,28 +43,28 @@ export const routes = [
   },
   {
     name: "Printing",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/printing",
+    element: <Printing />,
   },
   {
     name: "Phone Carrier Service",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/carrierservice",
+    element: <Carrier />,
   },
   {
     name: "Internet Service",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/internetservice",
+    element: <InternetSvc />,
   },
   {
     name: "Money Service",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/moneyservice",
+    element: <MoneySvc />,
   },
   {
     name: "Shipping Service",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/shipping",
+    element: <Shippingsvc />,
   },
   // {
   //   name: "Contact",

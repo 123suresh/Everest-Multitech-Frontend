@@ -82,7 +82,7 @@ export function Home() {
       </div>
 
       {/* Features Section */}
-      {/* <section className="-mt-32 bg-white px-2.5 pb-20 pt-4">
+      <section className="-mt-32 bg-white px-2.5 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="relative w-full min-h-[300px]">
             <Swiper
@@ -114,7 +114,7 @@ export function Home() {
             </Swiper>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Team Section */}
       <section className="px-2.5 pt-20 pb-48 bg-gray-50">
