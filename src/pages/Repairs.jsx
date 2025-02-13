@@ -16,26 +16,76 @@ export function Repairs() {
 
   return (
     <>
-      {/* Header Section */}
+      {/* Header Section with Background Images */}
       <Box
         sx={{
           textAlign: "center",
-          py: 5,
+          py: 10, // Increased padding for height
           px: 4,
           mx: 4,
-          // color: theme.palette.primary.main, 
+          position: "relative",
+          overflow: "hidden",
+          minHeight: "60vh", // Set a minimum height for the section
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundImage: [
+              'url("/img/repairImg1.jpg")',
+              'url("/img/repairImg2.png")',
+              'url("/img/repairimg3.jpg")',
+            ],
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            zIndex: -1,
+            animation: "changeBackground 6s infinite", // 3 images * 2 seconds each
+          },
+          "@keyframes changeBackground": {
+            "0%": { backgroundImage: 'url("/img/repairImg1.jpg")' },
+            "33%": { backgroundImage: 'url("/img/repairImg2.png")' },
+            "66%": { backgroundImage: 'url("/img/repairimg3.jpg")' },
+            "100%": { backgroundImage: 'url("/img/repairImg1.jpg")' },
+          },
         }}
       >
-        <Typography variant="h1" sx={{ mb: 6, fontWeight: "bold", fontSize: { xs: "2rem", md: "3rem" } }}>
-          Repairs
-        </Typography>
-        <Typography variant="subtitle1" sx={{ fontSize: { xs: "1.25rem", md: "1.5rem" } }}>
-          Everest Multi Tech specializes in the repair of a wide range of electronic devices, ensuring top-notch service and customer satisfaction.
-        </Typography>
+        {/* Overlay to darken the background */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust opacity as needed
+            zIndex: -1,
+          }}
+        />
+
+        {/* Content */}
+        <Box position="relative" zIndex={1}>
+          <Typography
+            variant="h1"
+            sx={{ mb: 6, fontWeight: "bold", fontSize: { xs: "2.5rem", md: "4rem" }, color: "white" }} // Increased font size
+          >
+            Repairs
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{ fontSize: { xs: "1.5rem", md: "2rem" }, color: "white" }} // Increased font size
+          >
+            Everest Multi Tech specializes in the repair of a wide range of electronic devices, ensuring top-notch service and customer satisfaction.
+          </Typography>
+        </Box>
       </Box>
 
       {/* Swiper Section */}
-      <Box sx={{ px: 4, mb: 6 }}>
+      {/* <Box sx={{ px: 4, mb: 6 }}>
         <Swiper
           modules={[Autoplay, Pagination]}
           slidesPerView={1}
@@ -57,7 +107,7 @@ export function Repairs() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Box>
+      </Box> */}
 
       {/* Vertical Tabs Section */}
       <VerticalTabs RepairDataFromProps={RepairData} />
