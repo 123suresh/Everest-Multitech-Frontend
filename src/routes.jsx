@@ -47,7 +47,7 @@ export const routes = [
     element: <Printing />,
   },
   {
-    name: "Phone Carrier Service",
+    name: "Phone Carrier",
     path: "/carrierservice",
     element: <Carrier />,
   },
