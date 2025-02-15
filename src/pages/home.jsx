@@ -118,11 +118,11 @@ export function Home() {
       <section className="px-2.5 pt-20 pb-48 bg-gray-50">
         <div className="container mx-auto">
           <PageTitle section="Our Services" heading="Here are our Services">
-            As a certified vendor for cell phone, laptop, computer, gaming device repairs, and flex/printing services,
-            we pride ourselves on delivering exceptional customer service. Our commitment to quality ensures that every
-            repair meets the highest standards, guaranteeing customer satisfaction. We are known for our quick, reliable,
-            and responsible service, backed by a guarantee on every repair we perform. Trust us to restore your devices and
-            meet all your printing needs with precision and care.
+            At  Everest Multi Tech Co LLC, we are your one-stop shop for a wide range of services 
+            designed to meet your personal and business needs. Whether you need custom printing, 
+            phone repairs, IT support, or remittance services, we’ve got you covered. Explore our 
+            full list of offerings below, and trust us to deliver the highest quality service 
+            every time.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {servicesData.map(({ img, name, position, socials }) => (
