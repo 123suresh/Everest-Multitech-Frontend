@@ -66,7 +66,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
             ))}
           </div>
         </div>
-        <hr className="my-6 border-gray-300" />
+        {/* <hr className="my-6 border-gray-300" />
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="mx-auto w-full px-4 text-center">
             <Typography
@@ -76,7 +76,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               {copyright}
             </Typography>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

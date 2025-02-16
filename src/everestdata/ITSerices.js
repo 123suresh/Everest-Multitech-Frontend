@@ -5,7 +5,7 @@ export const ITServices = [
         category: "Website Design & Hosting",
         price: 1499,
         inStock: true,
-        description:"We repair all kinds of desktops with expert precision. Our services include desktop screen replacement, fixing slow performance issues, and resolving heating problems. We also replace cooling fans, upgrade RAM and SSD, and swap logic boards as needed. Our skilled technicians perform micro-soldering and repair charging ports with accuracy. Additionally, we remove viruses, optimize storage, and ensure smooth system performance. We use high-quality parts for long-lasting repairs. Customer satisfaction is our top priority, and we guarantee reliable service. Visit us today for professional and efficient desktop repairs!",
+        description:"Providing affordable development, hosting, and high-quality software solutions makes Everest Multitech a great choice for businesses looking to establish their online presence.",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const ITServices = [
         category: "Computer service",
         price: 1499,
         inStock: true,
-        description:"We repair all kinds of desktops with expert precision. Our services include desktop screen replacement, fixing slow performance issues, and resolving heating problems. We also replace cooling fans, upgrade RAM and SSD, and swap logic boards as needed. Our skilled technicians perform micro-soldering and repair charging ports with accuracy. Additionally, we remove viruses, optimize storage, and ensure smooth system performance. We use high-quality parts for long-lasting repairs. Customer satisfaction is our top priority, and we guarantee reliable service. Visit us today for professional and efficient desktop repairs!",
+        description:"Everest Multitech provides professional computer services for both offices and homes to ensure smooth and efficient performance. We specialize in computer setup, repairs, troubleshooting, and maintenance for businesses and individuals. Our services include network configuration, software installation, virus removal, and system upgrades. We offer affordable pricing, expert support, and quick turnaround times to keep your devices running seamlessly. Trust us for reliable and high-quality computer solutions tailored to your needs.",
     },
     {
         id: 3,
@@ -21,6 +21,6 @@ export const ITServices = [
         category: "Networking Service",
         price: 1499,
         inStock: true,
-        description:"We repair all kinds of desktops with expert precision. Our services include desktop screen replacement, fixing slow performance issues, and resolving heating problems. We also replace cooling fans, upgrade RAM and SSD, and swap logic boards as needed. Our skilled technicians perform micro-soldering and repair charging ports with accuracy. Additionally, we remove viruses, optimize storage, and ensure smooth system performance. We use high-quality parts for long-lasting repairs. Customer satisfaction is our top priority, and we guarantee reliable service. Visit us today for professional and efficient desktop repairs!",
+        description:"We handle network installation, configuration, diagnostics, and upkeep for seamless connectivity. Our services cover Wi-Fi setup, router optimization, structured cabling, security enhancements, and performance tuning. With cost-effective plans, skilled technicians, and dependable service, we keep your network efficient and secure.",
     },
 ]

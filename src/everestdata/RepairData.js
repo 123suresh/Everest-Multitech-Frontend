@@ -37,7 +37,7 @@ export const RepairData = [
         category: "CPU Repair",
         price: 1499,
         inStock: true,
-        description:"We repair every thing of iphone.We fix iphone front screen, back cover, proximity, charing port and many more",
+        description:"Everest Multitech offers top-quality CPU repair services, ensuring smooth and efficient performance. We specialize in fixing overheating issues, water damage, driver malfunctions, and sound-related problems. Our team diagnoses and resolves hardware and software faults to restore your system's functionality. With expert solutions, quick turnaround times, and affordable pricing, we provide reliable CPU repairs for both home and office users. Trust us to keep your system running at its best.",
       }
 ]
 
