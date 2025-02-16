@@ -23,7 +23,7 @@ export const routes = [
   },
   {
     name: "Repair",
-    path: "/profile",
+    path: "/repair",
     element: <Repairs/>,
   },
   // {
@@ -51,16 +51,16 @@ export const routes = [
     path: "/carrierservice",
     element: <Carrier />,
   },
-  {
-    name: "Internet Service",
-    path: "/internetservice",
-    element: <InternetSvc />,
-  },
-  {
-    name: "Money Service",
-    path: "/moneyservice",
-    element: <MoneySvc />,
-  },
+  // {
+  //   name: "Internet Service",
+  //   path: "/internetservice",
+  //   element: <InternetSvc />,
+  // },
+  // {
+  //   name: "Money Service",
+  //   path: "/moneyservice",
+  //   element: <MoneySvc />,
+  // },
   {
     name: "Shipping Service",
     path: "/shipping",

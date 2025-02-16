@@ -43,33 +43,33 @@ export const RepairData = [
 
 export const RepairSlidingImg = [
   {
-    title:"CellPhone",
-    description:"Every operation on cell phone",
+    title:"iPhone, Android, and more",
+    description:"Screen, charging port, speaker, protector, camera, motherboard, passcode unlock",
     image:"https://www.adequateinfosoft.com/Assest/images/mobile-repair-about.jpg"
   },
   {
-    title:"Laptop",
-    description:"Every operation on cell phone",
+    title:"Laptop(MacBook, Dell and All)",
+    description:"Laptop screen, battery, charging, water damage, screen, motherboard, sound",
     image:"https://www.perfectcomputer.in/sitepad-data/uploads/2022/05/hand-dismantle-laptop-laptop-repair-screwdriver-close-up-hand-dismantle-laptop-laptop-repair-screwdriver-162454423.jpg"
   },
   {
     title:"Tablet",
-    description:"Every operation on cell phone",
+    description:"Screen, charging port, speaker, protector, camera, motherboard, passcode unlock",
     image:"https://techprorepair.com/wp-content/uploads/2018/11/Tablet-repair-technicians.jpg"
   },
   {
     title:"Desktop",
-    description:"Every operation on cell phone",
+    description:"Heating issue, sound, storage, motherbaord, water damage, charging",
     image:"https://wallpaperaccess.com/full/3945594.jpg"
   },
   {
     title:"Cpu",
-    description:"Every operation on cell phone",
+    description:"Heating issue, sound, storage, motherbaord, water damage, charging",
     image:"https://st.depositphotos.com/2315957/5027/i/950/depositphotos_50279419-stock-photo-computer-repair.jpg"
   },
   {
-    title:"battery",
-    description:"Every operation on cell phone",
+    title:"Battery",
+    description:"Battery replacement",
     image:"https://images.ctfassets.net/16nm6vz43ids/1iIKYKNmdomF99YPvdPnXB/b912e5ad06b0e2ca4833db2cdbf64b63/End-cap-laptop-battery-repair.jpg"
   }
 ]

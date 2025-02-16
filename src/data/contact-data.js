@@ -6,19 +6,25 @@ import {
 
 export const contactData = [
   {
-    title: "Recommends",
+    title: "Micro-Soldering",
     icon: BriefcaseIcon,
-    description:"Always makes the customer feel appreciated, I was told twice my I...",
+    description:"I had a great experience with great service. I went in to get my screen replaced on my MacBook. They were helpful and had a very competitive price. 5/5 stars for customer service and final result",
+    name:"Kai Young",
+    date:"31/12/2023"
   },
   {
-    title: "Recommends",
+    title: "Screen Replacement",
     icon: ChartBarIcon,
-    description:"Everest Multi Tech fixes broken phones & computers with ease, original parts...",
+    description:"I had a great experience with great service. I went in to get my screen replaced on my MacBook. They were helpful and had a very competitive price. 5/5 stars for customer service and final result",
+    name:"Dieynaba Talla",
+    date:"17/12/2023"
   },
   {
-    title: "Recommends",
+    title: "Water Damage",
     icon: PlayIcon,
-    description:"Everest Multi Tech fixes broken phones & computers with ease, original parts...",
+    description:"They are awesome fixed my iPad in 24 hrs! Saved me 260.00 that apple wanted to charge. They are very knowledgeable and helpful. Highly recommend them!",
+    name:"Anonymous",
+    date:"4/11/2023"
   },
 ];
 

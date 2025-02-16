@@ -23,9 +23,7 @@ import {servicesData} from "../everestdata/servicesData"
 export function Home() {
   return (
     <>
-      {/* Hero Section with Background Video */}
       <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32">
-        {/* Background Video */}
         <video
           autoPlay
           loop
@@ -36,7 +34,6 @@ export function Home() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay to darken the video */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
         {/* Content */}
@@ -125,12 +122,13 @@ export function Home() {
             every time.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {servicesData.map(({ img, name, position, socials }) => (
+            {servicesData.map(({ img, name, position, link }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
+                link={link}
                 // socials={
                 //   <div className="flex items-center gap-2">
                 //     {socials.map(({ color, name }) => (
@@ -155,7 +153,7 @@ export function Home() {
             efficiency, and reliability makes us the go-to choice for customers seeking expert solutions.
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
+            {contactData.map(({ title, icon, description, name, date }) => (
               <Card
                 key={title}
                 color="transparent"
@@ -173,9 +171,12 @@ export function Home() {
                 <Typography variant="h5" className="font-normal text-blue-gray-500 pt-3 pb-3">
                   {description}
                 </Typography>
-                <Button variant="text" className="p-0 hover:bg-transparent text-base pt-3 pb-3" style={{ color: "#ff6000" }}>
+                <Typography variant="h5" className="font-normal text-blue-gray-500 pt-3 pb-3">
+                  {name} - {date}
+                </Typography>
+                {/* <Button variant="text" className="p-0 hover:bg-transparent text-base pt-3 pb-3" style={{ color: "#ff6000" }}>
                   Read full review <ArrowForwardIosIcon fontSize="small" />
-                </Button>
+                </Button> */}
               </Card>
             ))}
           </div>

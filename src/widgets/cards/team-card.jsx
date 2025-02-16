@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Card, Avatar, Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom"; // Import Link from your routing library
 
-export function TeamCard({ img, name, position, socials, link }) {
+export function TeamCard({ img, name, position, link }) {
   return (
     <Link to={link} className="hover:shadow-lg transition-shadow duration-300">
       <Card
@@ -26,7 +26,7 @@ export function TeamCard({ img, name, position, socials, link }) {
             {position}
           </Typography>
         )}
-        {socials && <div className="mx-auto mt-5">{socials}</div>}
+        {/* {socials && <div className="mx-auto mt-5">{socials}</div>} */}
       </Card>
     </Link>
   );
