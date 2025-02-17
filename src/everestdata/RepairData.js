@@ -45,31 +45,31 @@ export const RepairSlidingImg = [
   {
     title:"iPhone, Android, and more",
     description:"Screen, charging port, speaker, protector, camera, motherboard, passcode unlock",
-    image:"https://www.adequateinfosoft.com/Assest/images/mobile-repair-about.jpg"
+    image:"/img/swapperImg1.jpg"
   },
   {
     title:"Laptop(MacBook, Dell and All)",
     description:"Laptop screen, battery, charging, water damage, screen, motherboard, sound",
-    image:"https://www.perfectcomputer.in/sitepad-data/uploads/2022/05/hand-dismantle-laptop-laptop-repair-screwdriver-close-up-hand-dismantle-laptop-laptop-repair-screwdriver-162454423.jpg"
+    image:"/img/swapperIaptop.jpg"
   },
   {
     title:"Tablet",
     description:"Screen, charging port, speaker, protector, camera, motherboard, passcode unlock",
-    image:"https://techprorepair.com/wp-content/uploads/2018/11/Tablet-repair-technicians.jpg"
+    image:"/img/swapperTablet.jpg"
   },
   {
     title:"Desktop",
     description:"Heating issue, sound, storage, motherbaord, water damage, charging",
-    image:"https://wallpaperaccess.com/full/3945594.jpg"
+    image:"/img/swapperDesktop.jpg"
   },
   {
     title:"Cpu",
     description:"Heating issue, sound, storage, motherbaord, water damage, charging",
-    image:"https://st.depositphotos.com/2315957/5027/i/950/depositphotos_50279419-stock-photo-computer-repair.jpg"
+    image:"/img/swapppercpu.jpg"
   },
   {
     title:"Battery",
     description:"Battery replacement",
-    image:"https://images.ctfassets.net/16nm6vz43ids/1iIKYKNmdomF99YPvdPnXB/b912e5ad06b0e2ca4833db2cdbf64b63/End-cap-laptop-battery-repair.jpg"
+    image:"/img/swapperbattery.jpg"
   }
 ]
