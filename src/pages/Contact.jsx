@@ -17,8 +17,8 @@ function Contact() {
         <div className="bg-white pl-10 pr-10">
 
             <div
-                style={{ backgroundColor: "#ff6000" }}
-                className=" flex items-center justify-center text-white pt-10 pd-10"
+                // style={{ backgroundColor: "#ff6000" }}
+                className=" flex items-center justify-center pt-10 pd-10"
             >
                 <div className="text-center">
                     <div className="flex justify-center">
@@ -88,10 +88,11 @@ function Contact() {
                         <h4 className="text-2xl text-gray-600 mb-2">1929 State Route 256</h4>
                         <h4 className="text-2xl text-gray-600 mb-2">Reproldsburg, Ohio 43068, United States</h4>
                         <h4 className="text-2xl text-gray-600 mb-4">Phone: <span style={{ color: "#ff6000" }}>(614) 282-7012</span></h4>
+                        <h4 className="text-2xl text-gray-600 mb-2">Open 7 days a week</h4>
                         <h3 className="text-3xl font-bold text-gray-800 mb-4">Hours</h3>
                         <h4 className="text-2xl text-gray-600">
                             <Grid container spacing={3}>
-                                <Grid item><h4 className="text-2xl text-gray-600 mb-2">Open today:</h4></Grid>
+                                {/* <Grid item><h4 className="text-2xl text-gray-600 mb-2">Open today:</h4></Grid> */}
                                 <Grid item><h4 className="text-2xl mb-2" style={{ color: "#ff6000" }}>10:00 am - 7:00pm</h4></Grid>
                             </Grid>
                         </h4>
