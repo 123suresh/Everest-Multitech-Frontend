@@ -17,12 +17,12 @@ function Microsoldering() {
              <Box
         sx={{
           textAlign: "center",
-          py: 10, // Increased padding for height
-          px: 4,
-          mx: 4,
+          // py: 10, // Increased padding for height
+          // px: 4,
+          // mx: 4,
           position: "relative",
           overflow: "hidden",
-          minHeight: "60vh", // Set a minimum height for the section
+          minHeight: "80vh", // Set a minimum height for the section
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

@@ -1,18 +1,36 @@
 import React from 'react';
-import { Grid } from '@mui/material';
 import {
-    Card,
-    CardBody,
-    CardHeader,
-    Typography,
     Button,
-    IconButton,
     Input,
     Textarea,
-    Checkbox,
 } from "@material-tailwind/react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { TextField, Box, Typography, Alert, Grid } from "@mui/material";
+import {EmailTemp} from "../components/email/EmailTemp";
 
 function Contact() {
+
+    const form = useRef();
+    const [success, setSuccess] = useState(null);
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm("service_kdpfg9q", "template_i40778q", form.current, {
+          publicKey: "EZvKR7t9vzJR3MvcX",
+        })
+        .then(
+          () => {
+            setSuccess("Email sent successfully!");
+          },
+          (error) => {
+            setSuccess(`Failed to send email: ${error.text}`);
+          }
+        );
+    };
+
     return (
         <div className="bg-white pl-10 pr-10">
 
@@ -41,43 +59,20 @@ function Contact() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                 <div className="p-6">
-                    <form className="w-full">
-                        <div className="mb-8">
-                            <Input
-                                variant="outlined"
-                                size="lg"
-                                label="Full Name"
-                                fullWidth 
-                                className="text-2xl" 
-                            />
-                        </div>
+                    {/* <Box component="form" ref={form} onSubmit={sendEmail} sx={{ mx: "auto", p: 2, boxShadow: 3, borderRadius: 2 }}>
+                      <Typography variant="h5" gutterBottom>
+                        Contact Us
+                      </Typography>
+                      {success && <Alert severity={success.includes("Failed") ? "error" : "success"}>{success}</Alert>}
+                      <TextField fullWidth label="Name" name="from_name" margin="normal" required />
+                      <TextField fullWidth label="Email" name="user_email" type="email" margin="normal" required />
+                      <TextField fullWidth label="Message" name="message" multiline rows={4} margin="normal" required />
+                      <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+                        Send
+                      </Button>
+                    </Box> */}
 
-                        <div className="mb-8">
-                            <Input
-                                variant="outlined"
-                                size="lg"
-                                label="Email Address"
-                                fullWidth 
-                                className="text-2xl" 
-                            />
-                        </div>
-
-                        <div className="mb-8">
-                            <Textarea
-                                variant="outlined"
-                                size="lg"
-                                label="Message"
-                                rows={4}
-                                fullWidth
-                                className="text-2xl"
-                            />
-                        </div>
-
-                        <Button variant="gradient" size="lg" className="mt-8" fullWidth sx={{ backgroundColor: "#ff6000" }}>
-                            Send Message
-                        </Button>
-                    </form>
-
+                    <EmailTemp/>
 
                 </div>
 
@@ -92,7 +87,6 @@ function Contact() {
                         <h3 className="text-3xl font-bold text-gray-800 mb-4">Hours</h3>
                         <h4 className="text-2xl text-gray-600">
                             <Grid container spacing={3}>
-                                {/* <Grid item><h4 className="text-2xl text-gray-600 mb-2">Open today:</h4></Grid> */}
                                 <Grid item><h4 className="text-2xl mb-2" style={{ color: "#ff6000" }}>10:00 am - 7:00pm</h4></Grid>
                             </Grid>
                         </h4>
@@ -100,7 +94,7 @@ function Contact() {
                 </div>
             </div>
 
-            <div><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=1929%20Baltimore-Reynoldsburg%20Rd%20Reynoldsburg,%20OH%2043068+(Everest%20Multi%20Tech)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">cat gps tracker</a></iframe></div>
+            <div style={{marginTop:"30px"}}><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=1929%20Baltimore-Reynoldsburg%20Rd%20Reynoldsburg,%20OH%2043068+(Everest%20Multi%20Tech)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">cat gps tracker</a></iframe></div>            
 
         </div>
     );

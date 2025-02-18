@@ -12,17 +12,17 @@ import Shippingsvc from "./pages/Shippingsvc";
 
 export const routes = [
   {
-    name: "home",
+    name: "HOME",
     path: "/home",
     element: <Home />,
   },
   {
-    name: "IT Service",
+    name: "IT SERVICE",
     path: "/itservice",
     element: <ITService/>,
   },
   {
-    name: "Repair",
+    name: "REPAIR",
     path: "/repair",
     element: <Repairs/>,
   },
@@ -37,17 +37,17 @@ export const routes = [
   //   element: <SignIn />,
   // },
   {
-    name: "Micro-Soldering",
+    name: "MICRO-SOLDERING",
     path: "/microsoldering",
     element: <Microsoldering />,
   },
   {
-    name: "Printing",
+    name: "PRINTING",
     path: "/printing",
     element: <Printing />,
   },
   {
-    name: "Phone Carrier",
+    name: "PHONE CARRIER",
     path: "/carrierservice",
     element: <Carrier />,
   },
@@ -62,7 +62,7 @@ export const routes = [
   //   element: <MoneySvc />,
   // },
   {
-    name: "Shipping Service",
+    name: "SHIPPING",
     path: "/shipping",
     element: <Shippingsvc />,
   },
@@ -73,7 +73,7 @@ export const routes = [
   //   element: "",
   // },
   {
-    name: "Contact",
+    name: "CONTACT",
     path: "/contact",
     element: <Contact/>,
   },

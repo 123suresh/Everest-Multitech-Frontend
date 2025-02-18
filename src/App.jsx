@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full"> {/* Removed fixed positioning */}
+      <div>
         <Navbar routes={routes} />
       </div>
 

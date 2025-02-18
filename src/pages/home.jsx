@@ -1,11 +1,7 @@
 import React from "react";
 import {
   Card,
-  Typography,
-  Button,
-  IconButton,
-  Input,
-  Textarea,
+  Typography
 } from "@material-tailwind/react";
 import { PageTitle } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
@@ -19,11 +15,12 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {RepairSlidingImg} from '../everestdata/RepairData';
 import { Box } from "@mui/material";
 import {servicesData} from "../everestdata/servicesData"
+import {EmailTemp} from "../components/email/EmailTemp";
 
 export function Home() {
   return (
     <>
-      <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32">
+      <div className="relative flex h-[80vh] content-center items-center justify-center">
         <video
           autoPlay
           loop
@@ -188,8 +185,10 @@ export function Home() {
         <div className="container mx-auto">
           <PageTitle section="Contact Us" heading="Wants to contact us?">
             Complete this form and we will get back to you as soon as possible.
+            <br/>
+            Phone Number: <strong>(614) 282-7012</strong>
           </PageTitle>
-          <form className="mx-auto w-full mt-12 lg:w-5/12">
+          {/* <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex flex-col gap-8 md:flex-row">
               <Input variant="outlined" size="lg" label="Full Name" className="flex-1" />
               <Input variant="outlined" size="lg" label="Email Address" className="flex-1" />
@@ -198,7 +197,8 @@ export function Home() {
             <Button variant="gradient" size="lg" className="mt-8" fullWidth>
               Send Message
             </Button>
-          </form>
+          </form> */}
+          <Box sx={{width:"100%", display: "flex", justifyContent: "center", alignItems: "center", py:"30px"}}><EmailTemp/></Box>
         </div>
       </section>
       
