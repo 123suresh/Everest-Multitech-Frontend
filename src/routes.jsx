@@ -56,11 +56,11 @@ export const routes = [
   //   path: "/internetservice",
   //   element: <InternetSvc />,
   // },
-  // {
-  //   name: "Money Service",
-  //   path: "/moneyservice",
-  //   element: <MoneySvc />,
-  // },
+  {
+    name: "MONEY SERVICE",
+    path: "/moneyservice",
+    element: <MoneySvc />,
+  },
   {
     name: "SHIPPING",
     path: "/shipping",

@@ -131,8 +131,16 @@ Footer.defaultProps = {
           path: "/carrierservice",
         },
         {
+          name:"Money Service",
+          path:"/moneyservice"
+        },
+        {
           name: "Shipping",
           path: "/shipping",
+        },
+        {
+          name: "Contact",
+          path: "/contact",
         }
       ],
     },

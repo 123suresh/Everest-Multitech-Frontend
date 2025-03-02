@@ -10,8 +10,8 @@ function Carrier() {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 10,
-          backgroundImage: 'url("/img/carriersvc.jpeg")',
+          py: 18,
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/carriersvc.jpeg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           color: "white",
@@ -20,13 +20,13 @@ function Carrier() {
         <Box position="relative" zIndex={1}>
           <Typography
             variant="h1"
-            sx={{ color:"#211515", mb: 6, fontWeight: "bold", fontSize: { xs: "2.5rem", md: "4rem" } }}
+            sx={{mb: 6, fontWeight: "bold", fontSize: { xs: "2.5rem", md: "4rem" } }}
           >
             All kinds of Phone Carrier
           </Typography>
           <Typography
             variant="subtitle1"
-            sx={{ color:"#211515", fontSize: { xs: "1.5rem", md: "2rem" } }}
+            sx={{fontSize: { xs: "1.5rem", md: "2rem" } }}
           >
             Everest Multi Tech specializes in Phone Carrier, expertly fixing intricate board-level issues with precision and reliability.
           </Typography>
