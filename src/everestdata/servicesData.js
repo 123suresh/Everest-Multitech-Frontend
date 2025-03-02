@@ -123,7 +123,7 @@ export const servicesData = [
     img: "/img/moneysvc.png",
     name: "Money Service",
     position: "Send or receive money worldwide with ease. We offer secure and convenient remittance services through RIA by IME, VIGO by Western Union.",
-    link:"/home",
+    link:"/moneyservice",
     socials: [
       {
         color: "light-blue",

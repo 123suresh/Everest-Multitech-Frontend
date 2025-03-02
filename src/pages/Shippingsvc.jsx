@@ -39,7 +39,7 @@ function Shippingsvc() {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 18,
+          py: 14,
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/shippingImg.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",

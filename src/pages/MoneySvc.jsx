@@ -7,12 +7,12 @@ function MoneySvc() {
   const moneyServiceData = [
     {
         title:"Ria",
-        logo:"https://media.zenfs.com/en/globenewswire.com/4af7a0e0e139ddf77469161134ac99cf",
+        logo:"/img/ria.jpeg",
         description:"Ria by IMEI at Everest Multi Tech offers a fast and secure way to send money worldwide. With quick processing and reliable service, your money reaches its destination safely and efficiently. Trust us for seamless international transactions."
     },
     {
         title:"vigo",
-        logo:"https://teletampa.com/wp-content/uploads/2021/09/223302155_VigoLogo_RGB_NEW_SM-1-1024x1024-1.png",
+        logo:"/img/vigo.png",
         description:"Vigo by Western Union at Everest Multi Tech is the best choice for sending money anywhere in the world. Your money is available as quickly as you send it, making it a reliable and secure place for hassle-free transactions."
     }]
 
@@ -22,8 +22,8 @@ function MoneySvc() {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 18,
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://lilliecpa.com/wp-content/uploads/2019/11/Cash-exchange-square-scaled.jpg")',
+          py: 14,
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/money.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           color: "white",          

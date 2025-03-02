@@ -63,7 +63,7 @@ function Printing() {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 18,
+          py: 14,
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/printmain.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",

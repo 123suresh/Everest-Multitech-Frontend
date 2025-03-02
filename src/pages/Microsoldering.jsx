@@ -6,15 +6,8 @@ import { Typography, Box, useTheme, useMediaQuery } from "@mui/material";
 function Microsoldering() {
   return (
     <>
-       {/* <div className="text-center py-10 px-4 mx-4" style={{color: "#ff6000 !important" }}>
-         <Typography variant="h4" className="mb-6 font-black text-4xl md:text-5xl">
-          All kinds of Microsoldering
-         </Typography>
-         <Typography variant="lead" className="text-2xl md:text-xl">
-            Everest Multi Tech specializes in micro-soldering repairs, expertly fixing intricate board-level issues with precision and reliability.
-         </Typography>
-       </div> */}
-             <Box
+
+      <Box
         sx={{
           textAlign: "center",
           // py: 10, // Increased padding for height
@@ -22,7 +15,7 @@ function Microsoldering() {
           // mx: 4,
           position: "relative",
           overflow: "hidden",
-          minHeight: "80vh", // Set a minimum height for the section
+          minHeight: "70vh", // Set a minimum height for the section
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

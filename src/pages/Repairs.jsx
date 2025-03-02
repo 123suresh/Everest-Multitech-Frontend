@@ -20,7 +20,7 @@ export function Repairs() {
           // mx: 4,
           position: "relative",
           overflow: "hidden",
-          minHeight: "80vh",
+          minHeight: "70vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
