@@ -1,27 +1,35 @@
 import React from 'react';
 import { Typography, Box, Card, CardContent, Grid } from "@mui/material";
+import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import InboxIcon from '@mui/icons-material/Inbox';
+import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
 
 function Shippingsvc() {
   const services = [
     {
       title: "SHIPPING",
       description: "Efficient and reliable shipping services worldwide.",
-      image: "https://via.placeholder.com/400"
+      image: "https://via.placeholder.com/400",
+      icon:<DirectionsBoatIcon color="info" sx={{ fontSize: "50px" }}/>
     },
     {
       title: "LOGISTICS",
       description: "Comprehensive logistics solutions for your business.",
-      image: "https://via.placeholder.com/400"
+      image: "https://via.placeholder.com/400",
+      icon:<InboxIcon color="info" sx={{ fontSize: "50px" }}/>
     },
     {
       title: "HIGH QUALITY",
       description: "Commitment to high-quality service and customer satisfaction.",
-      image: "https://via.placeholder.com/400"
+      image: "https://via.placeholder.com/400",
+      icon:<LocalShippingIcon color="info" sx={{ fontSize: "50px" }}/>
     },
     {
       title: "AIR CHARTERS",
       description: "Fast and secure air charter services for urgent deliveries.",
-      image: "https://via.placeholder.com/400"
+      image: "https://via.placeholder.com/400",
+      icon:<AirplanemodeActiveIcon color="info" sx={{ fontSize: "50px" }}/>
     }
   ];
 
@@ -60,7 +68,8 @@ function Shippingsvc() {
             <Grid item xs={12} sm={6} md={3} key={index}>
               <Card sx={{ borderRadius: 2, boxShadow: 3, transition: '0.3s', '&:hover': { boxShadow: 6 } }}>
                 <CardContent sx={{ textAlign: 'center' }}>
-                  <img src={service.image} alt={service.title} style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
+                  {/* <img src={service.image} alt={service.title} style={{ width: '100%', height: 'auto', borderRadius: 8 }} /> */}
+                  {service.icon}
                   <Typography variant="h5" sx={{ mt: 2, fontWeight: 'bold' }}>
                     {service.title}
                   </Typography>

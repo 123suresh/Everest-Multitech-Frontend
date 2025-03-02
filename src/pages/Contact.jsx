@@ -87,7 +87,7 @@ function Contact() {
                         <h3 className="text-3xl font-bold text-gray-800 mb-4">Hours</h3>
                         <h4 className="text-2xl text-gray-600">
                             <Grid container spacing={3}>
-                                <Grid item><h4 className="text-2xl mb-2" style={{ color: "#ff6000" }}>10:00 am - 7:00pm</h4></Grid>
+                                <Grid item><h4 className="text-2xl mb-2" style={{ color: "#ff6000" }}>9:00 am - 7:00pm</h4></Grid>
                             </Grid>
                         </h4>
                     </div>

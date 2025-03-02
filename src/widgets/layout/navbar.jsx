@@ -5,7 +5,6 @@ import {
   Navbar as MTNavbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -25,7 +24,7 @@ export function Navbar({ brandName, routes }) {
   };
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
         <Typography
           key={name}
@@ -53,8 +52,8 @@ export function Navbar({ brandName, routes }) {
               target={target}
               className="flex items-center gap-1 p-1 font-medium transition-colors duration-200"
               style={({ isActive }) => ({
-                fontSize: "18px",
-                color: isActive ? "#ff6000" : "#4a5568", 
+                fontSize: "16px",
+                color: isActive ? "#ff6000" : "black", 
               })}
             >
               {icon &&
@@ -71,7 +70,7 @@ export function Navbar({ brandName, routes }) {
 
   return (
     <MTNavbar color="transparent" className="p-2 w-full max-w-full">
-      <div className="flex items-center justify-between w-full" style={{ color: "black" }}>
+      <div className="flex items-center justify-between w-full">
         <Link to="/">
           <Typography>
             <img src="/img/everest_logo1.png" width="80px" height="auto" alt="Everest Logo" />
