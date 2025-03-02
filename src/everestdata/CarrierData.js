@@ -36,10 +36,12 @@ export const CarrierData = [
     },
     {
         title:"Spectrum",
+        logo:"https://ik.imagekit.io/l4n1xgr1s/Content/images/spectrum/revamp/spectrum-mobile-icon.png",
         description:"At Everest Multitech, we provide Spectrum Mobile Prepaid services with simple activations and competitive monthly plans. Whether you're switching or adding a new line, we help you find the best prepaid plan to fit your needs. Our team ensures a fast and smooth setup process with great customer support. Stop by today to get connected with Spectrum Mobile Prepaid!"
     },
     {
         title:"Boost Mobile",
+        logo:"https://logos-world.net/wp-content/uploads/2023/04/Boost-Mobile-Logo.png",
         description:"At Everest Multitech, we offer Boost Mobile Prepaid services with fast and easy activations for new and existing customers. Whether you need a single line or a family plan, we provide affordable prepaid options with no contracts. Our team ensures a smooth activation process and helps you choose the best plan for your needs. Visit us today to get started with Boost Mobile and enjoy reliable, high-speed connectivity!"
     }
 ]

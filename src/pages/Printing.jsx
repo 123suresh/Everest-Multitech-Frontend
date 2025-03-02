@@ -10,49 +10,49 @@ function Printing() {
     {
       title: "Custom Canvas Prints",
       description: "Turn your favorite photos into stunning, high-quality canvas art.",
-      image: "https://printme.online/wp-content/uploads/2020/06/canvas-landscape-1.png",
+      image: "/img/canvaspring.png",
       icon: <DirectionsBoatIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "One-Way Vision (Graphics)",
       description: "Enhance your windows with stunning, high-quality one-way vision graphics.",
-      image: "https://tododesigns.com/wp-content/uploads/2023/02/image0-4.jpeg",
+      image: "/img/graphicprinting.jpeg",
       icon: <InboxIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Business Cards & Stickers",
       description: "Make a lasting impression with high-quality business cards and stickers.",
-      image: "https://www.thestickerprinting.com/wp-content/uploads/2013/07/business-cards-stickers.png",
+      image: "/img/cardprint.png",
       icon: <LocalShippingIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Invitations for Events",
       description: "Create unforgettable moments with beautifully designed event invitations.",
-      image: "https://amyrenkenwrites.com/wp-content/uploads/2019/07/elegant-youre-invited-invitation-template-special-event-etsy-intended-for-proportions-3000-x-2400.jpg",
+      image: "/img/eventprint.jpg",
       icon: <AirplanemodeActiveIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Embroidery Services",
       description: "Add a personalized touch with high-quality embroidery services.",
-      image: "https://www.customplanet.co.uk/storage/images/pages/5oZb4t0dwuM7EYzKsdRLR30vLo6pK7VElWRNV7I6.jpg",
+      image: "/img/serviceprint.jpg",
       icon: <InboxIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Outdoor Banners ",
       description: "Stand out with durable, high-quality outdoor banners for any occasion.",
-      image: "https://unblast.com/wp-content/uploads/2019/11/Vertical-Banner-Mockup-1.jpg",
+      image: "/img/bannerprint.jpg",
       icon: <LocalShippingIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Photo Frames",
       description: "Showcase your cherished memories with elegant, high-quality photo frames.",
-      image: "https://homafy.com/wp-content/uploads/2023/03/heart-collage-frame.jpg",
+      image: "/img/frame.jpg",
       icon: <AirplanemodeActiveIcon color="info" sx={{ fontSize: "50px" }} />
     },
     {
       title: "Personalized T-Shirts & Apparel",
       description: "Express your style with custom-designed, high-quality personalized T-shirts & apparel.",
-      image: "https://craftyinkbd.com/wp-content/uploads/2020/12/yourdesignT-scaled.jpg",
+      image: "/img/tshirtprint.jpg",
       icon: <AirplanemodeActiveIcon color="info" sx={{ fontSize: "50px" }} />
     }
   ];
@@ -64,7 +64,7 @@ function Printing() {
           position: "relative",
           textAlign: "center",
           py: 10,
-          backgroundImage: 'url("https://advancedphotocopy.com/wp-content/uploads/2020/05/Digital-Printing-Advanced-Photocopy.jpg")',
+          backgroundImage: 'url("/img/printmain.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           color: "white",
@@ -73,13 +73,13 @@ function Printing() {
         <Box position="relative" zIndex={1}>
           <Typography
             variant="h1"
-            sx={{ mb: 6, fontWeight: "bold", fontSize: { xs: "2.5rem", md: "4rem" }, color:"#000" }}
+            sx={{ mb: 6, fontWeight: "bold", fontSize: { xs: "2.5rem", md: "4rem" }, color:"#fff" }}
           >
             Printing
           </Typography>
           <Typography
             variant="subtitle1"
-            sx={{ fontSize: { xs: "1.5rem", md: "2rem" }, color:"#000" }}
+            sx={{ fontSize: { xs: "1.5rem", md: "2rem" }, color:"#fff" }}
           >
             Everest Multi Tech specializes in Printing, delivering high-quality results and complete customer satisfaction.
           </Typography>
@@ -98,7 +98,7 @@ function Printing() {
             '&:hover': { boxShadow: 6 },
             display: "flex", 
             flexDirection: "column", 
-            height: "100%"  // Ensures all cards have the same height
+            height: "100%"
           }}
         >
           <CardContent 

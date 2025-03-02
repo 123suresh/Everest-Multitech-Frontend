@@ -52,8 +52,8 @@ export function Navbar({ brandName, routes }) {
               target={target}
               className="flex items-center gap-1 p-1 font-medium transition-colors duration-200"
               style={({ isActive }) => ({
-                fontSize: "16px",
-                color: isActive ? "#ff6000" : "black", 
+                fontSize: "12px",
+                color: isActive ? "#ff6000" : "black",
               })}
             >
               {icon &&
@@ -73,19 +73,14 @@ export function Navbar({ brandName, routes }) {
       <div className="flex items-center justify-between w-full">
         <Link to="/">
           <Typography>
-            <img src="/img/everest_logo1.png" width="80px" height="auto" alt="Everest Logo" />
+            <img src="/img/everest_logo1.png" width="40px" height="auto" alt="Everest Logo" />
           </Typography>
         </Link>
         <div className="hidden lg:flex justify-center flex-grow">{navList}</div>
-        {/* Login button commented out */}
-        {/* <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-          Login
-        </Button> */}
         <IconButton
           variant="text"
           size="sm"
-          color="white"
-          className="ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto bg-black text-white hover:bg-gray-800 focus:bg-gray-900 active:bg-gray-700 lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
@@ -94,9 +89,10 @@ export function Navbar({ brandName, routes }) {
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
         </IconButton>
+
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 text-blue-gray-900"
+        className="rounded-xl px-4 text-blue-gray-900"
         open={openNav}
       >
         <div className="container mx-auto">
