@@ -10,7 +10,7 @@ function Carrier() {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 14,
+          py: 18,
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/carriersvc.jpeg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
